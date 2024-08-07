@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
+      integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>About - Animato</title>
+  </head>
+  <body>
+    <div class="hero">
+      <!-- Placeholder for Navbar -->
+      <div id="navbar-placeholder"></div>
+
+      <section class="about">
+        <div class="main">
+          <img src="img/CV-icon.png" alt="profile" />
+          <div class="about-text">
+            <h2>About me</h2>
+            <h5>Artist <span>& Designer</span></h5>
+            <p>
+              I'm an AI anime artist. I use AI to generate anime images from my
+              thoughts. I also make realistic images with the palm of my hand.
+              My generated images will empower your fantasy!
+            </p>
+            <button type="button">Let's talk</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Placeholder for Footer -->
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <script>
+      // Load Navbar and Footer
+      function loadComponent(componentId, componentFile) {
+        fetch(componentFile)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(componentId).innerHTML = data;
+          })
+          .catch((error) => {
+            console.error('Error loading component:', error);
+          });
+      }
+
+      // Load Navbar
+      loadComponent('navbar-placeholder', 'navbar.html');
+
+      // Load Footer
+      loadComponent('footer-placeholder', 'footer.html');
+    </script>
+  </body>
+</html>
