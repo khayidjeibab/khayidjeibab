@@ -22,20 +22,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <link rel="stylesheet" href="./css/style.css" /> <!-- Assure-toi que le CSS est bien lié -->
-    <title>Service - Blogs</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title data-translate-key="blogPageTitle">Service - Blogs</title>
     <style>
-      /* Styles supplémentaires pour assurer la cohérence */
       body {
         background-color: #382947;
         color: #fff;
         margin: 0;
         padding: 0;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: "Josefin Sans", sans-serif;
       }
 
       .hero {
-        min-height: 100vh; /* Assure que le contenu principal prend toute la hauteur */
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
       }
@@ -55,105 +54,345 @@
         height: 150px;
       }
 
-      h1, h2 {
+      h1,
+      h2 {
         color: #fff;
+      }
+
+      /* Style for language switch */
+      .language-switch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        position: relative;
+      }
+
+      .switch-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 34px;
+        height: 16px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 8px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+
+      input:checked + .slider {
+        background-color: #2196f3;
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(18px);
+      }
+
+      .slider.round {
+        border-radius: 16px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+
+      .language-labels {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 5px;
+        position: relative;
+      }
+
+      .lang-en,
+      .lang-fr {
+        font-size: 12px;
+        color: #666;
+      }
+
+      .lang-en {
+        margin-right: 8px;
+      }
+
+      .lang-fr {
+        margin-left: 8px;
       }
     </style>
   </head>
   <body>
-    <!-- Navbar start -->
+    <!-- Hero section start -->
     <div class="hero">
       <nav>
-        <h2 class="logo">Advanced technologies <span>Solutions</span></h2>
+        <h2 class="logo">Advanced <span>Solutions</span></h2>
         <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="blog.html">Blogs</a></li>
-          <li><a href="Project.html">Projects</a></li>
+          <li><a href="index.html#home" data-translate-key="home">Home</a></li>
+          <li><a href="blog.html" data-translate-key="blogs">Blogs</a></li>
+          <li><a href="Project.html" data-translate-key="projects">Projects</a></li>
         </ul>
-        <a href="Abdoucv.pdf" class="btn" download="Abdoucv.pdf">Download CV</a>
+        <a href="Abdoucv.pdf" class="btn" download="Abdoucv.pdf" data-translate-key="downloadCV">Download CV</a>
+        <!-- Language Switch with Labels -->
+        <div class="language-switch">
+          <p class="switch-title" data-translate-key="language">Language</p>
+          <label class="switch">
+            <input type="checkbox" id="language-switch" />
+            <span class="slider round"></span>
+          </label>
+          <div class="language-labels">
+            <span class="lang-en">en</span>
+            <span class="lang-fr">fr</span>
+          </div>
+        </div>
       </nav>
 
       <!-- Content start -->
       <div class="blog-content">
-        <h1>Blogs</h1>
+        <h1 data-translate-key="blogsTitle">Blogs</h1>
 
         <!-- Blog Post 1 -->
         <section>
           <article>
-            <h2><a href="https://www.linkedin.com/feed/update/urn:li:activity:7215992650544369664/" target="_blank">Predicting the Future with #Artificial #Intelligence</a></h2>
-            <p>Explore how artificial intelligence is shaping the future and its potential impacts on various industries.</p>
+            <h2>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7215992650544369664/"
+                target="_blank"
+                data-translate-key="blog1Title"
+                >Predicting the Future with #Artificial #Intelligence</a
+              >
+            </h2>
+            <p data-translate-key="blog1Description">
+              Explore how artificial intelligence is shaping the future and its potential impacts on various industries.
+            </p>
           </article>
         </section>
 
         <!-- Blog Post 2 -->
         <section>
           <article>
-            <h2><a href="https://www.linkedin.com/feed/update/urn:li:activity:7219318802344235008/" target="_blank">To Innovative Companies and Recruiters: How to Make the Right Choice?</a></h2>
-            <p>Insights and tips for companies and recruiters to make informed decisions when selecting candidates.</p>
+            <h2>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7219318802344235008/"
+                target="_blank"
+                data-translate-key="blog2Title"
+                >To Innovative Companies and Recruiters: How to Make the Right Choice?</a
+              >
+            </h2>
+            <p data-translate-key="blog2Description">
+              Insights and tips for companies and recruiters to make informed decisions when selecting candidates.
+            </p>
           </article>
         </section>
 
         <!-- Blog Post 3 -->
         <section>
           <article>
-            <h2><a href="https://www.linkedin.com/feed/update/urn:li:activity:7203184217101377536?utm_source=share&utm_medium=member_desktop" target="_blank">Optimize Your Projects with TensorFlow Object Detection API</a></h2>
-            <p>Learn how to leverage TensorFlow's Object Detection API to enhance and optimize your projects.</p>
+            <h2>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7203184217101377536?utm_source=share&utm_medium=member_desktop"
+                target="_blank"
+                data-translate-key="blog3Title"
+                >Optimize Your Projects with TensorFlow Object Detection API</a
+              >
+            </h2>
+            <p data-translate-key="blog3Description">
+              Learn how to leverage TensorFlow's Object Detection API to enhance and optimize your projects.
+            </p>
           </article>
         </section>
 
         <!-- Blog Post 4 -->
         <section>
           <article>
-            <h2><a href="https://www.linkedin.com/feed/update/urn:li:activity:7181234250669535233?utm_source=share&utm_medium=member_desktop" target="_blank">Explore the Latest Advances in Natural Language Processing (NLP)!</a></h2>
-            <p>An overview of the most recent advancements in NLP and their implications for various applications.</p>
+            <h2>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7181234250669535233?utm_source=share&utm_medium=member_desktop"
+                target="_blank"
+                data-translate-key="blog4Title"
+                >Explore the Latest Advances in Natural Language Processing (NLP)!</a
+              >
+            </h2>
+            <p data-translate-key="blog4Description">
+              An overview of the most recent advancements in NLP and their implications for various applications.
+            </p>
           </article>
         </section>
 
         <!-- Blog Post 5 -->
         <section>
           <article>
-            <h2><a href="https://www.linkedin.com/feed/update/urn:li:activity:7171943848217141250?utm_source=share&utm_medium=member_desktop" target="_blank">Welcome to the World of Machine Learning: Exploring the Subtleties of Unsupervised Learning</a></h2>
-            <p>Delve into the world of machine learning, focusing on the nuances and applications of unsupervised learning.</p>
+            <h2>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7171943848217141250?utm_source=share&utm_medium=member_desktop"
+                target="_blank"
+                data-translate-key="blog5Title"
+                >Welcome to the World of Machine Learning: Exploring the Subtleties of Unsupervised Learning</a
+              >
+            </h2>
+            <p data-translate-key="blog5Description">
+              Delve into the intricacies of unsupervised learning and how it differs from other machine learning approaches.
+            </p>
           </article>
         </section>
+      </div>
+      <!-- Content end -->
 
-        <!-- Blog Post 6 -->
-        <section>
-          <article>
-            <h2><a href="https://www.linkedin.com/posts/djeibaba-abdellahi-142968235_artificial-intelligence-artificialintelligence-activity-7164943863214780416-7qFz?utm_source=share&utm_medium=member_desktop" target="_blank">The Benefits of #Artificial #Intelligence in Our Daily Lives: Concrete Projects that Transform Our View of the World</a></h2>
-            <p>An exploration of how artificial intelligence is transforming our daily lives through practical and impactful projects.</p>
-          </article>
-        </section>
-      </div>
-    </div>
+     <div class="footer">
+  <div class="contact-icons">
+    <a
+      href="https://www.linkedin.com/in/djeibaba-abdellahi-142968235/"
+      target="_blank"
+      data-info="LinkedIn: Djeibaba Abdellahi"
+      ><i class="fa-brands fa-linkedin"></i
+    ></a>
 
-    <!-- Footer section start -->
-    <div class="footer">
-      <div class="contact-icons">
-        <a
-          href="https://www.linkedin.com/in/djeibaba-abdellahi-142968235/"
-          target="_blank"
-          data-info="LinkedIn: Djeibaba Abdellahi"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a
-          href="mailto:abdoumed46574423@gmail.com"
-          data-info="Email: abdoumed46574423@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a href="tel:+21653573586" data-info="Phone: +216 53573586"
-          ><i class="fa-solid fa-phone"></i
-        ></a>
-        <a
-          href="https://wa.me/+21699263395"
-          target="_blank"
-          data-info="WhatsApp: +216 99263395"
-          ><i class="fa-brands fa-whatsapp"></i
-        ></a>
-      </div>
-      <div class="copyright">
-        <p>© 2024 Djeibaba Abdellahi. All rights reserved.</p>
-      </div>
+    <a
+        href="https://github.com/khayidjeibab"
+        target="_blank"
+        data-info="GitHub: khayidjeibab"
+      ><i class="fa-brands fa-github"></i
+      ></a>
+
+    <a href="mailto:abdoumed46574423@gmail.com" data-info="Email: abdoumed46574423@gmail.com"
+      ><i class="fa-solid fa-envelope"></i
+    ></a>
+    <a href="tel:+21653573586" data-info="Phone: +216 53573586"
+      ><i class="fa-solid fa-phone"></i
+    ></a>
+    <a href="https://wa.me/+21699263395" target="_blank" data-info="WhatsApp: +216 99263395"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+  </div>
+  <div class="copyright">
+    <p data-translate-key="footerText">© 2024 Djeibaba Abdellahi. All rights reserved.</p>
+  </div>
+</div>
+      <!-- Footer end -->
     </div>
+    <!-- Hero section end -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const languageSwitch = document.getElementById('language-switch');
+        const translateElements = document.querySelectorAll('[data-translate-key]');
+
+        // Define translation dictionary
+        const translations = {
+        en: {
+        blogPageTitle: "Service - Blogs",
+        home: "Home",
+        blogs: "Blogs",
+        projects: "Projects",
+        downloadCV: "Download CV",
+        language: "Language",
+        blogsTitle: "Blogs",
+        blog1Title: "Predicting the Future with #Artificial #Intelligence",
+        blog1Description:
+        "Explore how artificial intelligence is shaping the future and its potential impacts on various industries.",
+        blog2Title:
+        "To Innovative Companies and Recruiters: How to Make the Right Choice?",
+        blog2Description:
+        "Insights and tips for companies and recruiters to make informed decisions when selecting candidates.",
+        blog3Title:
+        "Optimize Your Projects with TensorFlow Object Detection API",
+        blog3Description:
+        "Learn how to leverage TensorFlow's Object Detection API to enhance and optimize your projects.",
+        blog4Title:
+        "Explore the Latest Advances in Natural Language Processing (NLP)!",
+        blog4Description:
+        "An overview of the most recent advancements in NLP and their implications for various applications.",
+        blog5Title:
+        "Welcome to the World of Machine Learning: Exploring the Subtleties of Unsupervised Learning",
+        blog5Description:
+        "Delve into the intricacies of unsupervised learning and how it differs from other machine learning approaches.",
+        footerText: "© 2024 Djeibaba Abdellahi. All rights reserved.",
+        companyName: "Advanced Solutions",
+      },
+        fr: {
+        blogPageTitle: "Service - Blogs",
+        home: "Accueil",
+        blogs: "Blogs",
+        projects: "Projets",
+        downloadCV: "Télécharger le CV",
+        language: "Langue",
+        blogsTitle: "Blogs",
+        blog1Title: "Prédire l'avenir avec l'intelligence artificielle",
+        blog1Description:
+        "Découvrez comment l'intelligence artificielle façonne l'avenir et ses impacts potentiels sur diverses industries.",
+        blog2Title:
+        "Aux entreprises innovantes et aux recruteurs : comment faire le bon choix ?",
+        blog2Description:
+        "Conseils et astuces pour les entreprises et les recruteurs afin de prendre des décisions éclairées lors de la sélection des candidats.",
+        blog3Title:
+        "Optimisez vos projets avec l'API de détection d'objets TensorFlow",
+        blog3Description:
+        "Découvrez comment tirer parti de l'API de détection d'objets de TensorFlow pour améliorer et optimiser vos projets.",
+        blog4Title:
+        "Découvrez les dernières avancées en traitement du langage naturel (NLP) !",
+        blog4Description:
+        "Un aperçu des avancées les plus récentes en NLP et de leurs implications pour diverses applications.",
+        blog5Title:
+        "Bienvenue dans le monde de l'apprentissage automatique : Explorer les subtilités de l'apprentissage non supervisé",
+        blog5Description:
+        "Plongez dans les subtilités de l'apprentissage non supervisé et comment il se distingue des autres approches d'apprentissage automatique.",
+        footerText: "© 2024 Djeibaba Abdellahi. Tous droits réservés.",
+        companyName: "Advanced Solutions",
+      }
+      }
+
+        // Function to switch languages
+        function switchLanguage(language) {
+        // Store language preference in local storage
+        localStorage.setItem('selectedLanguage', language);
+        // Select all elements with data-translate-key attribute
+        translateElements.forEach((element) => {
+        const key = element.getAttribute('data-translate-key');
+        if (translations[language][key]) {
+        element.innerText = translations[language][key];
+      }
+      });
+      }
+
+        // Event listener for language switch
+        document.getElementById('language-switch').addEventListener('change', function () {
+        switchLanguage(this.checked ? 'fr' : 'en');
+      });
+
+        // Load selected language from local storage on page load
+        const storedLanguage = localStorage.getItem('selectedLanguage');
+        if (storedLanguage) {
+        switchLanguage(storedLanguage);
+        document.getElementById('language-switch').checked = storedLanguage === 'fr';
+      }
+      });
+
+    </script>
   </body>
 </html>

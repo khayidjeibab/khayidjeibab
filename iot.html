@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js" integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title data-translate-key="webDevelopmentPageTitle">Web Development Services</title>
+    <title data-translate-key="iotServicesPageTitle">IoT Services</title>
     <style>
       body {
         background-color: #382947;
@@ -26,7 +26,7 @@
         flex-direction: column;
       }
 
-      .container1 {
+      .container {
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
@@ -71,29 +71,6 @@
         border-radius: 5px;
         text-decoration: none;
         color: #241a35;
-      }
-            .hero {
-        min-height: 150vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        max-height: 2100px;
-      }
-
-      h1,
-      h2 {
-        color: #fff;
-      }
-
-      p,
-      li {
-        font-size: 1.2em;
-        line-height: 1.6;
       }
 
       .footer {
@@ -230,35 +207,34 @@
     </nav>
     <!-- Content start -->
     <div class="container">
-      <h1 data-translate-key="webDevelopmentServices">Web Development Services</h1>
-      <p data-translate-key="webDevIntro">
-        Web development is at the heart of digital transformation. I offer customized web development services that encompass everything from design to implementation and ongoing support.
+      <h1 data-translate-key="iotServicesPageTitle">IoT Services</h1>
+      <p data-translate-key="iotIntro">
+        The Internet of Things (IoT) revolutionizes how we interact with the physical world. I provide cutting-edge IoT solutions that integrate devices, collect data, and drive actionable insights for various applications.
       </p>
-      <h2 data-translate-key="ourSkills">Our Skills</h2>
+      <h2 data-translate-key="ourIoTSkills">Our IoT Skills</h2>
       <ul>
-        <li data-translate-key="frontEndDevelopment">
-          <strong>Front-End Development</strong>: Creating modern and responsive user interfaces.
+        <li data-translate-key="deviceIntegration">
+          <strong>Device Integration</strong>: Seamlessly connecting and integrating a wide range of IoT devices.
         </li>
-        <li data-translate-key="backEndDevelopment">
-          <strong>Back-End Development</strong>: Robust solutions to manage data and application logic.
+        <li data-translate-key="dataAnalytics">
+          <strong>Data Analytics</strong>: Leveraging data collected from IoT devices to provide meaningful insights and drive decisions.
         </li>
-        <li data-translate-key="uxUiDesign">
-          <strong>UX/UI Design</strong>: Intuitive designs that enhance user experience.
+        <li data-translate-key="customSolutions">
+          <strong>Custom Solutions</strong>: Developing tailored IoT solutions to meet specific business needs and challenges.
         </li>
-        <li data-translate-key="maintenanceSupport">
-          <strong>Maintenance and Support</strong>: Ongoing assistance to ensure application performance and security.
+        <li data-translate-key="security">
+          <strong>Security</strong>: Ensuring the security and privacy of IoT devices and the data they generate.
         </li>
       </ul>
-      <h2 data-translate-key="completedProjects">Completed Projects</h2>
-      <p data-translate-key="projectsDescription">
-        My projects include developing e-commerce websites, interactive web applications, and content management systems. I ensure that each solution meets the unique needs of my clients.
+      <h2 data-translate-key="completedIoTProjects">Completed IoT Projects</h2>
+      <p data-translate-key="iotProjectsDescription">
+        My IoT projects span various domains, including smart home systems, industrial automation, and environmental monitoring. I focus on delivering solutions that enhance efficiency, safety, and overall user experience.
       </p>
       <p data-translate-key="contactInvitation">
-        To learn how I can help your business with web solutions, feel free to contact me.
+        To learn how my IoT solutions can transform your business, feel free to contact me.
       </p>
     </div>
   </div>
-
 <div class="footer">
   <div class="contact-icons">
     <a
@@ -294,106 +270,77 @@
     </p>
   </div>
 
+    <script>
 
-  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const translations = {
+    // English Translations
+    "en": {
+      "iotServicesPageTitle": "IoT Services",
+      "iotIntro": "The Internet of Things (IoT) revolutionizes how we interact with the physical world. I provide cutting-edge IoT solutions that integrate devices, collect data, and drive actionable insights for various applications.",
+      "ourIoTSkills": "Our IoT Skills",
+      "deviceIntegration": "Device Integration: Seamlessly connecting and integrating a wide range of IoT devices.",
+      "dataAnalytics": "Data Analytics: Leveraging data collected from IoT devices to provide meaningful insights and drive decisions.",
+      "customSolutions": "Custom Solutions: Developing tailored IoT solutions to meet specific business needs and challenges.",
+      "security": "Security: Ensuring the security and privacy of IoT devices and the data they generate.",
+      "completedIoTProjects": "Completed IoT Projects",
+      "iotProjectsDescription": "My IoT projects span various domains, including smart home systems, industrial automation, and environmental monitoring. I focus on delivering solutions that enhance efficiency, safety, and overall user experience.",
+      "contactInvitation": "To learn how my IoT solutions can transform your business, feel free to contact me.",
+      "footerText": "© 2024 Djeibaba Abdellahi. All rights reserved.",
+      "language": "Language",
+    },
 
-    const translations = {
-        home: {
-    en: "Home",
-    fr: "Accueil"
-  },
-  blogs: {
-    en: "Blogs",
-    fr: "Blogs"
-  },
-  projects: {
-    en: "Projects",
-    fr: "Projets"
-  },
-  downloadCV: {
-    en: "Download CV",
-    fr: "Télécharger le CV"
-  },
-  language: {
-    en: "Language",
-    fr: "Langue"
-  },
-  webDevelopmentPageTitle: {
-    en: "Web Development Services",
-    fr: "Services de développement web"
-  },
-  webDevelopmentServices: {
-    en: "Web Development Services",
-    fr: "Services de Développement Web"
-  },
-  webDevIntro: {
-    en: "Web development is at the heart of digital transformation. I offer customized web development services that encompass everything from design to implementation and ongoing support.",
-    fr: "Le développement web est au cœur de la transformation numérique. J'offre des services de développement web personnalisés qui englobent tout, de la conception à la mise en œuvre et au support continu."
-  },
-  ourSkills: {
-    en: "Our Skills",
-    fr: "Nos Compétences"
-  },
-  frontEndDevelopment: {
-    en: "Front-End Development: Creating modern and responsive user interfaces.",
-    fr: "Développement Front-End : Création d'interfaces utilisateur modernes et réactives."
-  },
-  backEndDevelopment: {
-    en: "Back-End Development: Robust solutions to manage data and application logic.",
-    fr: "Développement Back-End : Solutions robustes pour gérer les données et la logique applicative."
-  },
-  uxUiDesign: {
-    en: "UX/UI Design: Intuitive designs that enhance user experience.",
-    fr: "Conception UX/UI : Des conceptions intuitives qui améliorent l'expérience utilisateur."
-  },
-  maintenanceSupport: {
-    en: "Maintenance and Support: Ongoing assistance to ensure application performance and security.",
-    fr: "Maintenance et Support : Assistance continue pour assurer la performance et la sécurité des applications."
-  },
-  completedProjects: {
-    en: "Completed Projects",
-    fr: "Projets Réalisés"
-  },
-  projectsDescription: {
-    en: "My projects include developing e-commerce websites, interactive web applications, and content management systems. I ensure that each solution meets the unique needs of my clients.",
-    fr: "Mes projets incluent le développement de sites e-commerce, d'applications web interactives et de systèmes de gestion de contenu. Je m'assure que chaque solution répond aux besoins uniques de mes clients."
-  },
-  contactInvitation: {
-    en: "To learn how I can help your business with web solutions, feel free to contact me.",
-    fr: "Pour savoir comment je peux aider votre entreprise avec des solutions web, n'hésitez pas à me contacter."
-  },
-  footerText: {
-    en: "© 2024 Djeibaba Abdellahi. All rights reserved.",
-    fr: "2024 Djeibaba Abdellahi. Tous droits réservés."
-  }
+    // French Translations
+    "fr": {
+      "iotServicesPageTitle": "Services IoT",
+      "iotIntro": "L'Internet des objets (IoT) révolutionne la manière dont nous interagissons avec le monde physique. Je propose des solutions IoT de pointe qui intègrent des dispositifs, collectent des données et fournissent des informations exploitables pour diverses applications.",
+      "ourIoTSkills": "Nos Compétences IoT",
+      "deviceIntegration": "Intégration des Dispositifs: Connexion et intégration transparentes d'une large gamme de dispositifs IoT.",
+      "dataAnalytics": "Analyse des Données: Exploiter les données collectées à partir des dispositifs IoT pour fournir des informations significatives et prendre des décisions.",
+      "customSolutions": "Solutions Personnalisées: Développement de solutions IoT sur mesure pour répondre aux besoins et défis spécifiques des entreprises.",
+      "security": "Sécurité: Assurer la sécurité et la confidentialité des dispositifs IoT et des données qu'ils génèrent.",
+      "completedIoTProjects": "Projets IoT Réalisés",
+      "iotProjectsDescription": "Mes projets IoT couvrent divers domaines, y compris les systèmes de maison intelligente, l'automatisation industrielle et la surveillance environnementale. Je m'efforce de fournir des solutions qui améliorent l'efficacité, la sécurité et l'expérience utilisateur globale.",
+      "contactInvitation": "Pour savoir comment mes solutions IoT peuvent transformer votre entreprise, n'hésitez pas à me contacter.",
+      "footerText": "© 2024 Djeibaba Abdellahi. Tous droits réservés.",
+      "language": "Langue",
     }
+  };
 
-    const languageSwitch = document.getElementById('language-switch');
-    const elementsToTranslate = document.querySelectorAll('[data-translate-key]');
+  const languageSwitch = document.getElementById('language-switch');
+  const elementsToTranslate = document.querySelectorAll('[data-translate-key]');
 
-    const updateLanguage = (language) => {
-      elementsToTranslate.forEach(element => {
-        const key = element.getAttribute('data-translate-key');
-        element.textContent = translations[key][language];
-      });
-
-      // Store the language preference in localStorage
-      localStorage.setItem('language', language);
-    };
-
-    languageSwitch.addEventListener('change', () => {
-      const language = languageSwitch.checked ? 'fr' : 'en';
-      updateLanguage(language);
+  const updateLanguage = (language) => {
+    elementsToTranslate.forEach(element => {
+      const key = element.getAttribute('data-translate-key');
+      if (translations[language][key]) {
+        element.textContent = translations[language][key];
+      } else {
+        console.warn(`No translation found for key: ${key}`);
+      }
     });
 
-    // Check localStorage for preferred language and set the switch accordingly
-    const storedLanguage = localStorage.getItem('language');
-    if (storedLanguage) {
-      languageSwitch.checked = storedLanguage === 'fr';
-      updateLanguage(storedLanguage);
-    } else {
-      updateLanguage('en'); // Default language
-    }
-  </script>
+    // Store the language preference in localStorage
+    localStorage.setItem('language', language);
+  };
+
+  languageSwitch.addEventListener('change', () => {
+    const language = languageSwitch.checked ? 'fr' : 'en';
+    console.log(`Language switched to: ${language}`);
+    updateLanguage(language);
+  });
+
+  // Check localStorage for preferred language and set the switch accordingly
+  const storedLanguage = localStorage.getItem('language');
+  if (storedLanguage) {
+    languageSwitch.checked = storedLanguage === 'fr';
+    updateLanguage(storedLanguage);
+  } else {
+    updateLanguage('en'); // Default language
+  }
+});
+
+    </script>
+
 </body>
 </html>
