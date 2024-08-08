@@ -273,39 +273,51 @@
     <script>
 
 document.addEventListener('DOMContentLoaded', () => {
-  const translations = {
-    // English Translations
-    "en": {
-      "iotServicesPageTitle": "IoT Services",
-      "iotIntro": "The Internet of Things (IoT) revolutionizes how we interact with the physical world. I provide cutting-edge IoT solutions that integrate devices, collect data, and drive actionable insights for various applications.",
-      "ourIoTSkills": "Our IoT Skills",
-      "deviceIntegration": "Device Integration: Seamlessly connecting and integrating a wide range of IoT devices.",
-      "dataAnalytics": "Data Analytics: Leveraging data collected from IoT devices to provide meaningful insights and drive decisions.",
-      "customSolutions": "Custom Solutions: Developing tailored IoT solutions to meet specific business needs and challenges.",
-      "security": "Security: Ensuring the security and privacy of IoT devices and the data they generate.",
-      "completedIoTProjects": "Completed IoT Projects",
-      "iotProjectsDescription": "My IoT projects span various domains, including smart home systems, industrial automation, and environmental monitoring. I focus on delivering solutions that enhance efficiency, safety, and overall user experience.",
-      "contactInvitation": "To learn how my IoT solutions can transform your business, feel free to contact me.",
-      "footerText": "© 2024 Djeibaba Abdellahi. All rights reserved.",
-      "language": "Language",
-    },
+ const translations = {
+  // English Translations
+  "en": {
+    "navbarLogo": "Advanced",
+    "navbarLogoSpan": "Solutions",
+    "home": "Home",
+    "blogs": "Blogs",
+    "projects": "Projects",
+    "downloadCV": "Download CV",
+    "iotServicesPageTitle": "IoT Services",
+    "iotIntro": "The Internet of Things (IoT) revolutionizes how we interact with the physical world. I provide cutting-edge IoT solutions that integrate devices, collect data, and drive actionable insights for various applications.",
+    "ourIoTSkills": "Our IoT Skills",
+    "deviceIntegration": "Device Integration: Seamlessly connecting and integrating a wide range of IoT devices.",
+    "dataAnalytics": "Data Analytics: Leveraging data collected from IoT devices to provide meaningful insights and drive decisions.",
+    "customSolutions": "Custom Solutions: Developing tailored IoT solutions to meet specific business needs and challenges.",
+    "security": "Security: Ensuring the security and privacy of IoT devices and the data they generate.",
+    "completedIoTProjects": "Completed IoT Projects",
+    "iotProjectsDescription": "My IoT projects span various domains, including smart home systems, industrial automation, and environmental monitoring. I focus on delivering solutions that enhance efficiency, safety, and overall user experience.",
+    "contactInvitation": "To learn how my IoT solutions can transform your business, feel free to contact me.",
+    "footerText": "© 2024 Djeibaba Abdellahi. All rights reserved.",
+    "language": "Language",
+  },
 
-    // French Translations
-    "fr": {
-      "iotServicesPageTitle": "Services IoT",
-      "iotIntro": "L'Internet des objets (IoT) révolutionne la manière dont nous interagissons avec le monde physique. Je propose des solutions IoT de pointe qui intègrent des dispositifs, collectent des données et fournissent des informations exploitables pour diverses applications.",
-      "ourIoTSkills": "Nos Compétences IoT",
-      "deviceIntegration": "Intégration des Dispositifs: Connexion et intégration transparentes d'une large gamme de dispositifs IoT.",
-      "dataAnalytics": "Analyse des Données: Exploiter les données collectées à partir des dispositifs IoT pour fournir des informations significatives et prendre des décisions.",
-      "customSolutions": "Solutions Personnalisées: Développement de solutions IoT sur mesure pour répondre aux besoins et défis spécifiques des entreprises.",
-      "security": "Sécurité: Assurer la sécurité et la confidentialité des dispositifs IoT et des données qu'ils génèrent.",
-      "completedIoTProjects": "Projets IoT Réalisés",
-      "iotProjectsDescription": "Mes projets IoT couvrent divers domaines, y compris les systèmes de maison intelligente, l'automatisation industrielle et la surveillance environnementale. Je m'efforce de fournir des solutions qui améliorent l'efficacité, la sécurité et l'expérience utilisateur globale.",
-      "contactInvitation": "Pour savoir comment mes solutions IoT peuvent transformer votre entreprise, n'hésitez pas à me contacter.",
-      "footerText": "© 2024 Djeibaba Abdellahi. Tous droits réservés.",
-      "language": "Langue",
-    }
-  };
+  // French Translations
+  "fr": {
+    "navbarLogo": "Solutions",
+    "navbarLogoSpan": "Avancées",
+    "home": "Accueil",
+    "blogs": "Blogs",
+    "projects": "Projets",
+    "downloadCV": "Télécharger CV",
+    "iotServicesPageTitle": "Services IoT",
+    "iotIntro": "L'Internet des objets (IoT) révolutionne la manière dont nous interagissons avec le monde physique. Je propose des solutions IoT de pointe qui intègrent des dispositifs, collectent des données et fournissent des informations exploitables pour diverses applications.",
+    "ourIoTSkills": "Nos Compétences IoT",
+    "deviceIntegration": "Intégration des Dispositifs: Connexion et intégration transparentes d'une large gamme de dispositifs IoT.",
+    "dataAnalytics": "Analyse des Données: Exploiter les données collectées à partir des dispositifs IoT pour fournir des informations significatives et prendre des décisions.",
+    "customSolutions": "Solutions Personnalisées: Développement de solutions IoT sur mesure pour répondre aux besoins et défis spécifiques des entreprises.",
+    "security": "Sécurité: Assurer la sécurité et la confidentialité des dispositifs IoT et des données qu'ils génèrent.",
+    "completedIoTProjects": "Projets IoT Réalisés",
+    "iotProjectsDescription": "Mes projets IoT couvrent divers domaines, y compris les systèmes de maison intelligente, l'automatisation industrielle et la surveillance environnementale. Je m'efforce de fournir des solutions qui améliorent l'efficacité, la sécurité et l'expérience utilisateur globale.",
+    "contactInvitation": "Pour savoir comment mes solutions IoT peuvent transformer votre entreprise, n'hésitez pas à me contacter.",
+    "footerText": "© 2024 Djeibaba Abdellahi. Tous droits réservés.",
+    "language": "Langue",
+  }
+};
 
   const languageSwitch = document.getElementById('language-switch');
   const elementsToTranslate = document.querySelectorAll('[data-translate-key]');
