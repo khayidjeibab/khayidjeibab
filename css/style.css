@@ -837,7 +837,8 @@
     background-position: center;
     background-color: #291f61;
     position: relative;
-    display: table-row;
+    display: flex;
+
 }
 
 .hero nav {
@@ -847,12 +848,14 @@
     padding: 20px 2%;
     flex-wrap: wrap; /* Permet de s'adapter aux petits écrans */
     font-size: 10px;
+    width: 100%;
 }
 
 .hero nav .logo {
     color: var(--primary-text-color);
     font-size: 6px;
     letter-spacing: 1px;
+    display: flex;
 }
 
 
@@ -864,7 +867,7 @@
     display: flex;
     align-items: center;
     list-style-type: none;
-    gap: 8px; /* Espacement entre les éléments */
+    gap: 10px; /* Espacement entre les éléments */
 }
 
 .hero nav ul li a {
@@ -888,15 +891,11 @@ nav .recharger{
     font-size: 4px;
     text-transform: capitalize;
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
-    /*padding: 2px 3px;*/
-    border-radius: 1px;
-    margin-left: 19px;
-    margin-right: 49px;
+    padding: 2px 3px;
+   border-radius: 1px;
+    margin-right: 100px;
+    display: flex;
 }
-
-
-
-
 .hero{
  font-size: 10px;
 }
@@ -950,6 +949,10 @@ nav .recharger{
     }
 
 
+
+  .content {
+        font-size: 2rem;
+    }
     .content h1 {
         font-size: 2rem;
     }
