@@ -136,10 +136,10 @@
   </div>
 </div>
 
-    <script>
-      // Initialize language
-      let currentLanguage = 'en';
 
+
+    <script src="translations.js"></script>
+    <script>
 
   const translations = {
 
@@ -228,36 +228,7 @@
 
 
   }
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialize language
-  let currentLanguage = 'en';
 
-  // Function to switch languages
-  function switchLanguage(language) {
-    currentLanguage = language;
-    // Store language preference in local storage
-    localStorage.setItem('selectedLanguage', language);
-    // Select all elements with data-translate-key attribute
-    document.querySelectorAll('[data-translate-key]').forEach((element) => {
-      const key = element.getAttribute('data-translate-key');
-      if (translations[key] && translations[key][language]) {
-        element.innerText = translations[key][language];
-      }
-    });
-  }
-
-  // Event listener for language switch
-  document.getElementById('language-switch').addEventListener('change', function () {
-    switchLanguage(this.checked ? 'fr' : 'en');
-  });
-
-  // Load selected language from local storage on page load
-  const storedLanguage = localStorage.getItem('selectedLanguage');
-  if (storedLanguage) {
-    switchLanguage(storedLanguage);
-    document.getElementById('language-switch').checked = storedLanguage === 'fr';
-  }
-});
 
     </script>
   </body>

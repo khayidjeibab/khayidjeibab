@@ -127,7 +127,7 @@
 
   </div>
 
-
+<script src="translations.js"></script>
   <script>
 
     const translations = {
@@ -201,32 +201,7 @@
   }
     }
 
-    const languageSwitch = document.getElementById('language-switch');
-    const elementsToTranslate = document.querySelectorAll('[data-translate-key]');
 
-    const updateLanguage = (language) => {
-      elementsToTranslate.forEach(element => {
-        const key = element.getAttribute('data-translate-key');
-        element.textContent = translations[key][language];
-      });
-
-      // Store the language preference in localStorage
-      localStorage.setItem('language', language);
-    };
-
-    languageSwitch.addEventListener('change', () => {
-      const language = languageSwitch.checked ? 'fr' : 'en';
-      updateLanguage(language);
-    });
-
-    // Check localStorage for preferred language and set the switch accordingly
-    const storedLanguage = localStorage.getItem('language');
-    if (storedLanguage) {
-      languageSwitch.checked = storedLanguage === 'fr';
-      updateLanguage(storedLanguage);
-    } else {
-      updateLanguage('en'); // Default language
-    }
   </script>
 </body>
 </html>

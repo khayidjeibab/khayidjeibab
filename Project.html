@@ -93,6 +93,17 @@
             <a href="https://github.com/khayidjeibab/Forest-Fire-Prediction" target="_blank" data-translate-key="githubRepository">GitHub Repository</a>
           </li>
         </section>
+
+                <section>
+          <li>
+            <h2 data-translate-key="nlpTitle">Natural Language Processing</h2>
+            <h3 data-translate-key="cvParsingTitle">Smart CV Tracking (CV Parsing)</h3>
+            <p data-translate-key="cvParsingDescription">
+              This project uses Python and NLP to extract important information from CVs, such as name, skills, education, certificates, and experience. It provides recommendations to recruiters based on the extracted information.
+            </p>
+            <a href="https://github.com/khayidjeibab/CV_Parsing" target="_blank" data-translate-key="githubRepository">GitHub Repository</a>
+          </li>
+        </section>
         <section>
           <li>
             <h2 data-translate-key="computerVisionTitle">Computer Vision</h2>
@@ -136,104 +147,105 @@
     <p data-translate-key="footerText">© 2024 Djeibaba Abdellahi. All rights reserved.</p>
   </div>
 </div>
+
     <script src="translations.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const languageSwitch = document.getElementById('language-switch');
-      const translateElements = document.querySelectorAll('[data-translate-key]');
 
-      const translations = {
-        home: {
-          en: "Home",
-          fr: "Accueil"
-        },
-        blogs: {
-          en: "Blogs",
-          fr: "Blogs"
-        },
-        projects: {
-          en: "Projects",
-          fr: "Projets"
-        },
-        downloadCV: {
-          en: "Download CV",
-          fr: "Télécharger CV"
-        },
-        language: {
-          en: "Language",
-          fr: "Langue"
-        },
-        projectsTitle: {
-          en: "Projects",
-          fr: "Projets"
-        },
-        computerVisionTitle: {
-          en: "Computer Vision",
-          fr: "Vision par Ordinateur"
-        },
-        realTimeDetectionTitle: {
-          en: "Real-time Electrical Appliance Detection via Video Streams",
-          fr: "Détection en Temps Réel d'Appareils Électriques via des Flux Vidéo"
-        },
-        realTimeDetectionDescription: {
-          en: "This project uses transfer learning with MobileNet V2 for detecting electrical appliances in real-time from video streams.",
-          fr: "Ce projet utilise l'apprentissage par transfert avec MobileNet V2 pour détecter des appareils électriques en temps réel à partir de flux vidéo."
-        },
-        energyDisaggregationTitle: {
-          en: "Energy Disaggregation Using Unsupervised Learning",
-          fr: "Désagrégation Énergétique par Apprentissage Non Supervisé"
-        },
-        energyDisaggregationDescription: {
-          en: "This project involves energy disaggregation based on unsupervised learning techniques, specifically using hierarchical clustering.",
-          fr: "Ce projet concerne la désagrégation énergétique basée sur des techniques d'apprentissage non supervisé, utilisant spécifiquement le clustering hiérarchique."
-        },
-        onlineExamTitle: {
-          en: "Online Exam Platform",
-          fr: "Plateforme d'Examen en Ligne"
-        },
-        onlineExamDescription: {
-          en: "I have developed an online exam platform using Flask. This platform enables the creation and management of online exams.",
-          fr: "J'ai développé une plateforme d'examen en ligne utilisant Flask. Cette plateforme permet la création et la gestion d'examens en ligne."
-        },
-        forestFirePredictionTitle: {
-          en: "Forest Fire Prediction",
-          fr: "Prédiction des Incendies de Forêts"
-        },
-        forestFirePredictionDescription: {
-          en: "This project aims to predict the occurrence of forest fires by analyzing data on temperature, humidity, and oxygen levels collected from sensors.",
-          fr: "Ce projet vise à prédire l'occurrence d'incendies de forêts en analysant les données de température, d'humidité et de niveaux d'oxygène collectées à partir de capteurs."
-        },
-        facialRecognitionTitle: {
-          en: "Real-time Facial Recognition and Feature Extraction",
-          fr: "Reconnaissance Faciale en Temps Réel et Extraction de Caractéristiques"
-        },
-        facialRecognitionDescription: {
-          en: "This project focuses on real-time facial recognition and feature extraction based on recognized images of individuals. It aims to identify and analyze facial characteristics from live video streams.",
-          fr: "Ce projet se concentre sur la reconnaissance faciale en temps réel et l'extraction de caractéristiques basées sur des images reconnues d'individus. Il vise à identifier et analyser les caractéristiques faciales à partir de flux vidéo en direct."
-        },
-        githubRepository: {
-          en: "GitHub Repository",
-          fr: "Référentiel GitHub"
-        },
-        footerText: {
-          en: "© 2024 Djeibaba Abdellahi. All rights reserved.",
-          fr: "2024 Djeibaba Abdellahi. Tous droits réservés"
-        }
-      };
 
-      function translatePage() {
-        const language = languageSwitch.checked ? 'fr' : 'en';
-        translateElements.forEach(element => {
-          const key = element.getAttribute('data-translate-key');
-          if (translations[key]) {
-            element.textContent = translations[key][language];
-          }
-        });
-      }
+    const translations = {
+    // Existing translations...
+    home: {
+        en: "Home",
+        fr: "Accueil"
+    },
+    blogs: {
+        en: "Blogs",
+        fr: "Blogs"
+    },
+    projects: {
+        en: "Projects",
+        fr: "Projets"
+    },
+    downloadCV: {
+        en: "Download CV",
+        fr: "Télécharger CV"
+    },
+    language: {
+        en: "Language",
+        fr: "Langue"
+    },
+    projectsTitle: {
+        en: "Projects",
+        fr: "Projets"
+    },
+    computerVisionTitle: {
+        en: "Computer Vision",
+        fr: "Vision par Ordinateur"
+    },
+    realTimeDetectionTitle: {
+        en: "Real-time Electrical Appliance Detection via Video Streams",
+        fr: "Détection en Temps Réel d'Appareils Électriques via des Flux Vidéo"
+    },
+    realTimeDetectionDescription: {
+        en: "This project uses transfer learning with MobileNet V2 for detecting electrical appliances in real-time from video streams.",
+        fr: "Ce projet utilise l'apprentissage par transfert avec MobileNet V2 pour détecter des appareils électriques en temps réel à partir de flux vidéo."
+    },
+    energyDisaggregationTitle: {
+        en: "Energy Disaggregation Using Unsupervised Learning",
+        fr: "Désagrégation Énergétique par Apprentissage Non Supervisé"
+    },
+    energyDisaggregationDescription: {
+        en: "This project involves energy disaggregation based on unsupervised learning techniques, specifically using hierarchical clustering.",
+        fr: "Ce projet concerne la désagrégation énergétique basée sur des techniques d'apprentissage non supervisé, utilisant spécifiquement le clustering hiérarchique."
+    },
+    onlineExamTitle: {
+        en: "Online Exam Platform",
+        fr: "Plateforme d'Examen en Ligne"
+    },
+    onlineExamDescription: {
+        en: "I have developed an online exam platform using Flask. This platform enables the creation and management of online exams.",
+        fr: "J'ai développé une plateforme d'examen en ligne utilisant Flask. Cette plateforme permet la création et la gestion d'examens en ligne."
+    },
+    forestFirePredictionTitle: {
+        en: "Forest Fire Prediction",
+        fr: "Prédiction des Incendies de Forêts"
+    },
+    forestFirePredictionDescription: {
+        en: "This project aims to predict the occurrence of forest fires by analyzing data on temperature, humidity, and oxygen levels collected from sensors.",
+        fr: "Ce projet vise à prédire l'occurrence d'incendies de forêts en analysant les données de température, d'humidité et de niveaux d'oxygène collectées à partir de capteurs."
+    },
+    facialRecognitionTitle: {
+        en: "Real-time Facial Recognition and Feature Extraction",
+        fr: "Reconnaissance Faciale en Temps Réel et Extraction de Caractéristiques"
+    },
+    facialRecognitionDescription: {
+        en: "This project focuses on real-time facial recognition and feature extraction based on recognized images of individuals. It aims to identify and analyze facial characteristics from live video streams.",
+        fr: "Ce projet se concentre sur la reconnaissance faciale en temps réel et l'extraction de caractéristiques basées sur des images reconnues d'individus. Il vise à identifier et analyser les caractéristiques faciales à partir de flux vidéo en direct."
+    },
+    nlpTitle: {
+        en: "Natural Language Processing",
+        fr: "Traitement du Langage Naturel"
+    },
+    cvParsingTitle: {
+        en: "Smart CV Tracking (CV Parsing)",
+        fr: "Suivi Intelligent de CV (Analyse de CV)"
+    },
+    cvParsingDescription: {
+        en: "This project uses Python and NLP to extract important information from CVs, such as name, skills, education, certificates, and experience. It provides recommendations to recruiters based on the extracted information.",
+        fr: "Ce projet utilise Python et le traitement du langage naturel (NLP) pour extraire des informations importantes des CV, telles que le nom, les compétences, l'éducation, les certificats et l'expérience. Il fournit des recommandations aux recruteurs basées sur les informations extraites."
+    },
+    githubRepository: {
+        en: "GitHub Repository",
+        fr: "Référentiel GitHub"
+    },
+    footerText: {
+        en: "© 2024 Djeibaba Abdellahi. All rights reserved.",
+        fr: "2024 Djeibaba Abdellahi. Tous droits réservés"
+    }
+};
 
-      languageSwitch.addEventListener('change', translatePage);
-      translatePage();
-    });
+
+
   </script>
 </body>
 </html>

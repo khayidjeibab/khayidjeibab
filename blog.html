@@ -175,100 +175,75 @@
       <!-- Footer end -->
     </div>
     <!-- Hero section end -->
+    <script src="translations.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const languageSwitch = document.getElementById('language-switch');
-        const translateElements = document.querySelectorAll('[data-translate-key]');
 
-        // Define translation dictionary
-        const translations = {
-        en: {
-        blogPageTitle: "Service - Blogs",
-        home: "Home",
-        blogs: "Blogs",
-        projects: "Projects",
-        downloadCV: "Download CV",
-        language: "Language",
-        blogsTitle: "Blogs",
-        blog1Title: "Predicting the Future with #Artificial #Intelligence",
-        blog1Description:
-        "Explore how artificial intelligence is shaping the future and its potential impacts on various industries.",
-        blog2Title:
-        "To Innovative Companies and Recruiters: How to Make the Right Choice?",
-        blog2Description:
-        "Insights and tips for companies and recruiters to make informed decisions when selecting candidates.",
-        blog3Title:
-        "Optimize Your Projects with TensorFlow Object Detection API",
-        blog3Description:
-        "Learn how to leverage TensorFlow's Object Detection API to enhance and optimize your projects.",
-        blog4Title:
-        "Explore the Latest Advances in Natural Language Processing (NLP)!",
-        blog4Description:
-        "An overview of the most recent advancements in NLP and their implications for various applications.",
-        blog5Title:
-        "Welcome to the World of Machine Learning: Exploring the Subtleties of Unsupervised Learning",
-        blog5Description:
-        "Delve into the intricacies of unsupervised learning and how it differs from other machine learning approaches.",
-        footerText: "© 2024 Djeibaba Abdellahi. All rights reserved.",
-        companyName: "Advanced Solutions",
-      },
-        fr: {
-        blogPageTitle: "Service - Blogs",
-        home: "Accueil",
-        blogs: "Blogs",
-        projects: "Projets",
-        downloadCV: "Télécharger le CV",
-        language: "Langue",
-        blogsTitle: "Blogs",
-        blog1Title: "Prédire l'avenir avec l'intelligence artificielle",
-        blog1Description:
-        "Découvrez comment l'intelligence artificielle façonne l'avenir et ses impacts potentiels sur diverses industries.",
-        blog2Title:
-        "Aux entreprises innovantes et aux recruteurs : comment faire le bon choix ?",
-        blog2Description:
-        "Conseils et astuces pour les entreprises et les recruteurs afin de prendre des décisions éclairées lors de la sélection des candidats.",
-        blog3Title:
-        "Optimisez vos projets avec l'API de détection d'objets TensorFlow",
-        blog3Description:
-        "Découvrez comment tirer parti de l'API de détection d'objets de TensorFlow pour améliorer et optimiser vos projets.",
-        blog4Title:
-        "Découvrez les dernières avancées en traitement du langage naturel (NLP) !",
-        blog4Description:
-        "Un aperçu des avancées les plus récentes en NLP et de leurs implications pour diverses applications.",
-        blog5Title:
-        "Bienvenue dans le monde de l'apprentissage automatique : Explorer les subtilités de l'apprentissage non supervisé",
-        blog5Description:
-        "Plongez dans les subtilités de l'apprentissage non supervisé et comment il se distingue des autres approches d'apprentissage automatique.",
-        footerText: "© 2024 Djeibaba Abdellahi. Tous droits réservés.",
-        companyName: "Advanced Solutions",
-      }
-      }
 
-        // Function to switch languages
-        function switchLanguage(language) {
-        // Store language preference in local storage
-        localStorage.setItem('selectedLanguage', language);
-        // Select all elements with data-translate-key attribute
-        translateElements.forEach((element) => {
-        const key = element.getAttribute('data-translate-key');
-        if (translations[language][key]) {
-        element.innerText = translations[language][key];
-      }
-      });
-      }
+          // Define translation dictionary
+          const translations = {
+            en: {
+              blogPageTitle: "Service - Blogs",
+              home: "Home",
+              blogs: "Blogs",
+              projects: "Projects",
+              downloadCV: "Download CV",
+              language: "Language",
+              blogsTitle: "Blogs",
+              blog1Title: "Predicting the Future with #Artificial #Intelligence",
+              blog1Description:
+                      "Explore how artificial intelligence is shaping the future and its potential impacts on various industries.",
+              blog2Title:
+                      "To Innovative Companies and Recruiters: How to Make the Right Choice?",
+              blog2Description:
+                      "Insights and tips for companies and recruiters to make informed decisions when selecting candidates.",
+              blog3Title:
+                      "Optimize Your Projects with TensorFlow Object Detection API",
+              blog3Description:
+                      "Learn how to leverage TensorFlow's Object Detection API to enhance and optimize your projects.",
+              blog4Title:
+                      "Explore the Latest Advances in Natural Language Processing (NLP)!",
+              blog4Description:
+                      "An overview of the most recent advancements in NLP and their implications for various applications.",
+              blog5Title:
+                      "Welcome to the World of Machine Learning: Exploring the Subtleties of Unsupervised Learning",
+              blog5Description:
+                      "Delve into the intricacies of unsupervised learning and how it differs from other machine learning approaches.",
+              footerText: "© 2024 Djeibaba Abdellahi. All rights reserved.",
+              companyName: "Advanced Solutions",
+            },
+            fr: {
+              blogPageTitle: "Service - Blogs",
+              home: "Accueil",
+              blogs: "Blogs",
+              projects: "Projets",
+              downloadCV: "Télécharger le CV",
+              language: "Langue",
+              blogsTitle: "Blogs",
+              blog1Title: "Prédire l'avenir avec l'intelligence artificielle",
+              blog1Description:
+                      "Découvrez comment l'intelligence artificielle façonne l'avenir et ses impacts potentiels sur diverses industries.",
+              blog2Title:
+                      "Aux entreprises innovantes et aux recruteurs : comment faire le bon choix ?",
+              blog2Description:
+                      "Conseils et astuces pour les entreprises et les recruteurs afin de prendre des décisions éclairées lors de la sélection des candidats.",
+              blog3Title:
+                      "Optimisez vos projets avec l'API de détection d'objets TensorFlow",
+              blog3Description:
+                      "Découvrez comment tirer parti de l'API de détection d'objets de TensorFlow pour améliorer et optimiser vos projets.",
+              blog4Title:
+                      "Découvrez les dernières avancées en traitement du langage naturel (NLP) !",
+              blog4Description:
+                      "Un aperçu des avancées les plus récentes en NLP et de leurs implications pour diverses applications.",
+              blog5Title:
+                      "Bienvenue dans le monde de l'apprentissage automatique : Explorer les subtilités de l'apprentissage non supervisé",
+              blog5Description:
+                      "Plongez dans les subtilités de l'apprentissage non supervisé et comment il se distingue des autres approches d'apprentissage automatique.",
+              footerText: "© 2024 Djeibaba Abdellahi. Tous droits réservés.",
+              companyName: "Advanced Solutions",
+            },
+          }
 
-        // Event listener for language switch
-        document.getElementById('language-switch').addEventListener('change', function () {
-        switchLanguage(this.checked ? 'fr' : 'en');
-      });
 
-        // Load selected language from local storage on page load
-        const storedLanguage = localStorage.getItem('selectedLanguage');
-        if (storedLanguage) {
-        switchLanguage(storedLanguage);
-        document.getElementById('language-switch').checked = storedLanguage === 'fr';
-      }
-      });
 
     </script>
   </body>
